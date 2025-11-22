@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, midnightblue, #0a1a3a, #001f3f);
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    color: white;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+        color: white;
+
+}
+
+aside {
+    flex: 2;
+    overflow-y: auto;
+    color: white;
+}
+
+header,
+footer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: white;
+
+}
