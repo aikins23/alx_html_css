@@ -344,36 +344,24 @@ footer p {
     margin-bottom: 35px;
     font-weight: lighter;
 }
-/*animation styling*/
-.what-we-do-item {
-    animation-duration: 3s;
-    animation-name: slideIn;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+/* animation styling */
+.what-we-do-item,
+.dots {
+    animation: fadeUp 2.5s ease-in-out infinite alternate;
 }
-@keyframes slideIn {
-    from {
-        transform: translateX(150vw) scale(2,1);
+
+/* New animation */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
     }
-    to {
-        transform: translate(0) scale(1,1);
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 
-.dots {
-    animation-duration: 3s;
-    animation-name: slideIn;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes slideIn {
-    from {
-        transform: translateX(150vw) scale(2,1);
-    }
-    to {
-        transform: translate(0) scale(1,1);
-    }
-}
 /*Tablet screen styling*/
 @media  screen and (min-width: 600px) {
     nav{
